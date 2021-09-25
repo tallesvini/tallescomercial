@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+/*BARRA SUPERIOR*/
+.barra-superior {
+        background-color: #ffffff;
+        height: 10%;
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+}
+
+.links {
+    font-size: calc(0.6em + 0.6vw);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.direcionar {
+    color: #595959;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.direcionar:hover {
+    color: #0476D9;
+    transition: ease 0.5s;
+}
+
+.direcionar::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0476D9;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.direcionar:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*HOME*/
+.barra-one {
+    background-image: linear-gradient(to bottom right, #0476D9 , #886BF2);
+    height: 1000px;
+    width: 100%;
+}
+
+p.frase {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: calc(1.3em + 0.5vh);
+    padding-top: 7%;
+}
+
+p.nome {
+    color: white;
+    font-size: calc(6em + -1vh);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+
+p.trabalho {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.download {
+    padding: 10px 2%;
+    margin: 0px 10px 10px;
+    font-size: calc(0.7em + 0.1vh);
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid white 1px;
+    background-color: none;
+    position: absolute;
+    top: 15%;
+    left: 68%;
+    text-align: center;
+}
+
+.download:hover {
+    background-color: white;
+    border: solid #0476D9 1px;
+    color: #0476D9;
+    transition:ease-in-out 0.4s;
+}
+
+/*SOBRE*/
+.barra-two {
+    background-image: linear-gradient(to bottom right, #cfcfcf , #E4E4E4);
+    height: 1000px;
+    width: 100%;
+}
+
+.paragrafo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    top: clamp(5em, 10em, 7em);
+}
+
+.paragrafo h1 {
+    color: #0476D9;
+    font-size: calc(2em + 1vh);
+    padding-bottom: 15px;
+}
+
+.paragrafo p {
+    font-size: calc(2em - 2vh);
+    color: #595959;
+    margin: 8px;
+}
+
+/*PROJETO*/
+
+.barra-three {
+    background-image: linear-gradient(to bottom right, #0476D9 , #886BF2);
+    height: 1000px;
+    width: 100%;
+}
+
+.barra-three h1 {
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: calc(3em - 2vh);
+    text-align: center;
+    padding-top: clamp(1em, 10em, 3em);
+
+
+}
+
+.barra-three img {
+    position: relative;
+    margin: 20px;
+    top: 3%;
+    display: inline-block; 
+    width: 25%;
+    border-radius: 25px;
+    box-shadow: 0.5px 1px 0.45em rgb(75, 90, 104);
+    margin-left: 16%;
+}
+
+.barra-three img:hover {
+    box-shadow: 0.5px 1px 2em #0476D9;
+    transition: ease-in-out 0.2s;
+}
+
+
+.barra-three p {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    position: relative;
+    top: 5%;
+    margin: 5px;
+
+}
+
+/*CONTATO*/
+.barra-four {
+    background-image: linear-gradient(to bottom right, #cfcfcf , #E4E4E4);
+    font-family: 'Nunito', sans-serif;
+    color: #262626;
+    height: 340px;
+    width: 100%;
+}
+
+.barra-four h1, h2, p {
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+
+.barra-four h1, h2 {
+    color: #0476D9;
+}
+
+.barra-four a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.barra-four a:hover {
+    color: #0476D9;
+    transition: ease-in 0.2s;
+}
+
+
+.github {
+    width: 3%;
+    position: relative;
+    left: 39%;
+    padding-top: 3.5rem;
+    margin: 0 3%;
+}
+
+.instagram {
+    width: 6%;
+    position: relative;
+    left: 39%;
+    padding-top: 8%;
+    margin: 0 3% 0 0;
+}
+
+.linkedin {
+    width: 3%;
+    position: relative;
+    left: 39%;
+    padding-top: 8%;
+}
+
+.final {
+    font-size: calc(1em - 0.9vh);
+    padding: 4px;
+}
+
+/*BARRA LATERAL*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(238, 238, 238);
+    border-radius: 3px;
+}
