@@ -62,7 +62,7 @@ body {
 
 /*HOME*/
 .barra-one {
-    background-image: linear-gradient(to bottom right, #011640, #05F2F2);
+    background-image: linear-gradient(to bottom right, #0476D9, #05AFF2);
     height: 1000px;
     width: 100%;
 }
@@ -128,21 +128,23 @@ p.trabalho {
 }
 
 .paragrafo h1 {
-    color: #0A3459;
+    color: #0476D9;
     font-size: calc(2em + 1vh);
     padding-bottom: 15px;
+    padding-top: 10%;
 }
 
 .paragrafo p {
-    font-size: calc(2em - 2vh);
+    font-size: 1em;
     color: #3E3E40;
-    margin: 8px;
+    margin: 0px 10%;
+
 }
 
 /*PROJETO*/
 
 .barra-three {
-    background-image: linear-gradient(to bottom right, #011640, #05F2F2);
+    background-image: linear-gradient(to bottom right, #0476D9, #05AFF2);
     height: 1000px;
     width: 100%;
 }
@@ -161,28 +163,48 @@ p.trabalho {
     position: relative;
     margin: 20px;
     top: 3%;
+    left: 34%;
+    transform: translate(-50%);
     display: inline-block; 
-    width: 25%;
-    border-radius: 25px;
-    box-shadow: 0.5px 1px 0.45em rgb(75, 90, 104);
+    width: 13%;
     margin-left: 16%;
 }
-
-.barra-three img:hover {
-    box-shadow: 0.5px 1px 2em #133986;
-    transition: ease-in-out 0.2s;
-}
-
 
 .barra-three p {
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ffffff;
     position: relative;
     top: 5%;
-    margin: 5px;
+    margin: 0px 10%;
+    text-align: center;
+}
 
+.ver-mais {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver-mais2 {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.ver-mais2:hover {
+    background-color: #6EB9FA;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    transition: ease-in-out 0.3s;
+    
 }
 
 /*CONTATO*/
@@ -201,7 +223,7 @@ p.trabalho {
 }
 
 .barra-four h1, h2 {
-    color: #0A3459;
+    color: #0476D9;
 }
 
 .barra-four a {
