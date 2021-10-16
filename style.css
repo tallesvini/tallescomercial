@@ -26,7 +26,6 @@ body {
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-
 }
 
 .direcionar {
@@ -138,7 +137,6 @@ p.trabalho {
     font-size: 1em;
     color: #3E3E40;
     margin: 0px 10%;
-
 }
 
 /*PROJETO*/
@@ -160,11 +158,10 @@ p.trabalho {
 .barra-three img {
     position: relative;
     margin: 20px;
-    top: 3%;
+    top: 1vh;
     left: 34%;
     transform: translate(-50%);
-    display: inline-block; 
-    width: 13%;
+    width: 7em;
     margin-left: 16%;
 }
 
@@ -202,7 +199,6 @@ p.trabalho {
     color: #FFFFFF;
     border: solid 1px #FFFFFF;
     transition: ease-in-out 0.3s;
-    
 }
 
 /*CONTATO*/
@@ -224,6 +220,11 @@ p.trabalho {
     color: #0476D9;
 }
 
+.dados-contato {
+    position: relative;
+    top: 7vh;
+}
+
 .barra-four a {
     text-decoration: none;
     color: #262626;
@@ -234,33 +235,23 @@ p.trabalho {
     transition: ease-in 0.2s;
 }
 
-
-.github {
-    width: 3%;
-    position: relative;
-    left: 39%;
-    padding-top: 3.5rem;
-    margin: 0 3%;
-}
-
-.instagram {
-    width: 6%;
-    position: relative;
-    left: 39%;
-    padding-top: 8%;
-    margin: 0 3% 0 0;
-}
-
 .linkedin {
-    width: 3%;
+    width: 5em;
     position: relative;
-    left: 39%;
-    padding-top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5vh;
+}
+
+.linkedin:hover {
+    filter: drop-shadow(1px 1px 2px #b3b3b3);
+    transition: ease-out 0.2s;
 }
 
 .final {
     font-size: calc(1em - 0.9vh);
-    padding: 1vh;
+    position: relative;
+    top: 7vh;
 }
 
 /*BARRA LATERAL*/
@@ -269,7 +260,7 @@ p.trabalho {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #dadada;
+    background-color: #cacaca;
 }
 
 ::-webkit-scrollbar-thumb {
