@@ -9,6 +9,7 @@ html {
 
 body {
     background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*BARRA SUPERIOR*/
@@ -64,25 +65,28 @@ body {
 .barra-one {
     position: relative;
     height: 100vh;
-    width: 100%;
-    animation-name: background-principal;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    width: 60%;
+    animation: barra-one infinite alternate 5s;
+}
+
+/*animação*/
+@keyframes barra-one {
+    100% { background-color: #189CEF;}
+    50% { background-color: #05AFF2;}
+    0% { background-color: #0064A3;}
 }
 
 p.frase {
     color: white;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-top: 14vh;
 }
 
-
 p.nome {
     color: white;
-    font-size: calc(6em + -1vh);
+    font-size: 7em;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
@@ -93,29 +97,95 @@ p.trabalho {
     font-size: 18px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
 }
 
+/*barra one 2*/
+.barra-one2 {
+    position: absolute;
+    background-color: red;
+    width: 40%;
+    height: 100vh;
+    left: 60%;
+    top: 0;
+    animation: barra-two infinite alternate 5s;  
+}
+
+/*HABILIDADES*/
+@keyframes barra-two {
+    100% { background-color: #FFFFFF;}
+    50% { background-color: #e7e7e7;}
+    0% { background-color: #E3E3E3;}
+}
+
+.skills {
+    position: relative;
+    transform: translateY(40%);
+    left: 15%;
+    width: 70%;
+    height: 60vh;
+}
+
+.skills .foto-perfil {
+    position: absolute;
+    width: 50%;
+    border-radius: 50%;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+.habilidades h5 {
+    position: relative;
+    top: 32vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-decoration: underline #0476D9 3px;
+}
+
+.habilidades p {
+    position: relative;
+    top: 34vh;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 1vh;
+    border-radius: 15px 50px;
+    margin: 1vh;
+    width: 16vw;
+    padding-top: 1vh;
+    background-color: #0476D9;
+}
+
+.habilidades p:hover {
+    color: #0476D9;
+    background-color: #BFBFBF;
+    transition: .3s;
+}
 
 .download {
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
-    color: #ffffff;
-    border: solid white 1px;
+    color: #0476D9;
+    border: solid #0476D9 1px;
     background-color: none;
     position: absolute;
     text-align: center;
-    padding: 10px 2%;
-    margin: 0px 10px 10px;
-    font-size: 0.7em;
-    top: 15vh;
-    left: 65vw;
+    width: 20vw;
+    padding: 1vh;
+    font-size: .8em;
+    top: 58vh;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .download:hover {
-    background-color: white;
-    border: solid #0476D9 1px;
-    color: #0476D9;
-    transition:ease-in-out 0.4s;
+    background-color: #0476D9;
+    color: #FFFFFF;
+    border-radius: 3px;
+    transition:ease-in-out 0.3s;
 }
 
 /*SOBRE*/
@@ -148,7 +218,7 @@ p.trabalho {
 /*PROJETO*/
 .barra-three {
     position: relative;
-    animation-name: background-principal;
+    animation-name: barra-one;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -282,19 +352,72 @@ p.trabalho {
     border-radius: 3px;
 }
 
+/*ENVIAR EMAIL FIXED*/
+.redes-sociais img {
+    position: fixed;
+    width: 4em;
+    top: 88vh;
+    right: 2%;
+    filter: drop-shadow(0px 1px 2px #0476D9);
+}
+
+@media (max-width: 900px) {
+    .redes-sociais img {
+        width: 3em;
+        right: 1%;
+    }
+}
+
 /*RESPONSIVIDADE MOBILE*/
-@media (max-width: 600px) {
+@media (max-width: 675px) {
+    /*home*/
     .frase, .nome, .trabalho {
         top: 10vh;
     }
-
-    .download {
-        width: 55vw;
-        left: 48%;
-        transform: translate(-50%);
-        top: 75vh;
+    
+    .barra-one {
+        width: 100%;
+    }
+    
+    .barra-one .frase {
+        font-size: 1.3em;
+    }
+    
+    .barra-one .nome {
+        font-size: 6em;
+    }
+    
+    .barra-one2 {
+        width: 0;
+    }
+    
+    .habilidades {
+        display: none;
     }
 
+    .barra-one2 img {
+        display: none;
+    }
+
+    /*download*/
+    .download {
+        position: absolute;
+        color: #FFFFFFFF;
+        border: solid 1px #FFFFFF;
+        width: 55vw;
+        left: 50%;
+        transform: translateX(-65%);
+        top: 55vh;
+    }
+
+    .download:hover {
+        background-color: white;
+        border: solid #0476D9 1px;
+        color: #0476D9;
+        transition:ease-in-out 0.4s;
+    }
+
+    /*contato*/
     .linkedin {
         top: 25vh;
     }
@@ -303,11 +426,9 @@ p.trabalho {
         font-size: .6em;
         top: 5vh;
     }
-}
 
-/*ANIMAÇÃO*/
-@keyframes background-principal {
-    100% { background-color: #189CEF;}
-    50% { background-color: #05AFF2;}
-    0% { background-color: #0064A3;}
+    /*email fixed*/
+    .redes-sociais img {
+        top: 90vh;
+    }
 }
