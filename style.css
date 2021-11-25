@@ -14,13 +14,19 @@ body {
 
 /*BARRA SUPERIOR*/
 .barra-superior {
+    position: fixed;
     background-color: #ffffff;
     height: 10vh;
-    display: block;
-    position: fixed;
     width: 100%;
     z-index: 10;
     top: 0;
+}
+
+.logo-tm .logo1 {
+    position: absolute;
+    width: 10em;
+    top: -7vh;
+    left: 18vw;
 }
 
 .links {
@@ -36,6 +42,16 @@ body {
     position: relative;
     top: 3.5vh;
     margin: 0px 2vw;
+    top: 3vh;
+}
+
+/*responsividade logo*/
+@media (max-width: 1050px) {
+    .logo-tm .logo1 {
+        left: 6vw;
+        width: 9em;
+        top: -6vh;
+    }
 }
 
 .direcionar:hover {
@@ -231,17 +247,86 @@ p.trabalho {
     font-family: 'Nunito', sans-serif;
     font-size: calc(3em - 2vh);
     text-align: center;
-    padding-top: 22vh;
+    padding-top: 18vh;
 }
 
-.barra-three img {
-    position: relative;
-    margin: 20px;
-    top: 1vh;
-    left: 34%;
+.projeto-1 img {
+    position: absolute;
+    width: 25em;
+    top: 33vh;
+    left: 5vw;
+    border-radius: 12px;
+    box-shadow: 1px 2px 8px #373b8d;
+}
+
+.projeto-2 img {
+    position: absolute;
+    width: 25em;
+    top: 33vh;
+    border-radius: 12px;
+    left: 50%;
     transform: translate(-50%);
-    width: 7em;
-    margin-left: 16%;
+    box-shadow: 1px 2px 8px #373b8d;
+}
+
+.projeto-3 img {
+    position: absolute;
+    width: 25em;
+    top: 33vh;
+    border-radius: 12px;
+    right: 5vw;
+    box-shadow: 1px 2px 8px #373b8d;
+}
+
+.projeto-1 img:hover, .projeto-2 img:hover, .projeto-3 img:hover {
+    top: 32.5vh;
+    filter: brightness(90%);
+    transition: .3s;
+}
+
+/*responsividade 1*/
+@media (max-width: 1350px) {
+    .projeto-1 img, .projeto-2 img, .projeto-3 img {
+        width: 20em;
+    }
+}
+
+/*responsividade 2*/
+@media (max-width: 1100px) {
+    /*PROJETOS*/
+    .projeto-1 img{
+        width: 15em;
+        top: 30vh;
+        left: 9vw;
+    }
+
+    .projeto-2 img{
+        width: 15em;
+        top: 50vh;
+    }
+
+    .projeto-3 img{
+        width: 15em;
+        top: 30vh;
+        right: 9vw;
+    }
+
+    .projeto-1 img:hover, .projeto-3 img:hover {
+        top: 29.5vh;
+    }
+
+    .projeto-2 img:hover {
+        top: 49.5vh;
+    }
+
+    /*VER MAIS*/
+    .barra-three p {
+        top: 45vh !important;
+    }
+
+    .ver-mais {
+        top: 72vh !important;
+    }
 }
 
 .barra-three p {
@@ -250,12 +335,14 @@ p.trabalho {
     font-size: 1em;
     color: #ffffff;
     position: relative;
-    top: 5%;
+    top: 40vh;
     margin: 0px 10%;
     text-align: center;
 }
 
 .ver-mais {
+    position: absolute;
+    top: 70vh;
     width: 100%;
     height: 30vh;
     display: flex;
@@ -317,17 +404,12 @@ p.trabalho {
     transition: ease-in 0.2s;
 }
 
-.linkedin {
-    width: 5em;
-    position: absolute;
+.icones-contato img{  
+    position: relative;
     left: 50%;
-    transform: translate(-50%);
-    top: 20vh;
-}
-
-.linkedin:hover {
-    filter: drop-shadow(1px 1px 2px #b3b3b3);
-    transition: ease-out 0.2s;
+    top: 15vh;
+    transform: translate(-100%);
+    width: 35px;
 }
 
 .final {
@@ -361,6 +443,11 @@ p.trabalho {
     filter: drop-shadow(0px 1px 2px #0476D9);
 }
 
+.redes-sociais img:hover {
+    top: 87.5vh;
+    transition: .2s;
+}
+
 @media (max-width: 900px) {
     .redes-sociais img {
         width: 3em;
@@ -370,6 +457,11 @@ p.trabalho {
 
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width: 675px) {
+    /*navegação*/
+    .logo-tm .logo1 {
+        display: none;
+    }
+
     /*home*/
     .frase, .nome, .trabalho {
         top: 10vh;
@@ -417,9 +509,56 @@ p.trabalho {
         transition:ease-in-out 0.4s;
     }
 
-    /*contato*/
-    .linkedin {
+    /*projetos*/
+    .barra-three h1 {
+        padding-top: 15vh;
+    }
+    .projeto-1 img, .projeto-2 img, .projeto-3 img {
+        width: 10em;
+    }
+
+    .projeto-1 img {
+        left: 50%;
+        transform: translate(-50%);
         top: 25vh;
+    }
+
+    .projeto-1 img:hover {
+        top: 24.5vh;
+    }
+
+    .projeto-2 img {
+        left: 50%;
+        transform: translate(-50%);
+        top: 40vh;
+    }
+
+    .projeto-2 img:hover {
+        top: 39.5vh;
+    }
+    
+    .projeto-3 img {
+        left: 50%;
+        transform: translate(-50%);
+        top: 55vh;
+    }
+
+    .projeto-3 img:hover {
+        top: 54.5vh;
+    }
+    
+    .barra-three p {
+        top: 47vh !important;
+    }
+
+    .ver-mais {
+        top: 75vh !important;
+    }
+
+    /*contato*/
+    .icones-contato img {
+        width: 1.2em;
+        top: 20vh;
     }
 
     .dados-contato p {
@@ -429,7 +568,6 @@ p.trabalho {
 
     /*email fixed*/
     .redes-sociais img {
-        top: 87vh;
-        right: 2%;
+        top: 90vh;
     }
 }
