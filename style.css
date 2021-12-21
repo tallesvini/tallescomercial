@@ -92,34 +92,47 @@ body {
     0% { background-color: #0064A3;}
 }
 
+@keyframes left-center {
+    from {
+        right: 50vw;
+        opacity: 0.05;
+    }
+    to {
+        right: 0vw;
+        opacity: 1;
+    }
+}
+
 p.frase {
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size: 1.7em;
     padding-top: 14vh;
+    animation: left-center 1.5s;
 }
 
 p.nome {
-    color: white;
+    color: #ffffff;
     font-size: 7em;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
+    animation: left-center 1.5s;
 }
 
 p.trabalho {
-    color: white;
+    color: #ffffff;
     font-size: 18px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
+    animation: left-center 1.5s;
 }
 
 /*barra one 2*/
 .barra-one2 {
     position: absolute;
-    background-color: red;
     width: 40%;
     height: 100vh;
     left: 60%;
@@ -173,11 +186,14 @@ p.trabalho {
     width: 16vw;
     padding-top: 1vh;
     background-color: #0476D9;
+    border: solid 1px #ffffff;
+    cursor: pointer;
 }
 
 .habilidades p:hover {
     color: #0476D9;
-    background-color: #BFBFBF;
+    background-color: #e7e7e7;
+    border: solid 1px #0476D9;
     transition: .3s;
 }
 
