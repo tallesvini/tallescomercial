@@ -103,7 +103,7 @@ p.frase {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.7em;
-    padding-top: 14vh;
+    padding-top: 10vh;
 }
 
 p.nome {
@@ -121,6 +121,26 @@ p.trabalho {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.2em;
+}
+
+.download {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid #ffffff 1px;
+    background-color: none;
+    top: 82vh;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+}
+
+.download:hover {
+    background-color: #0476D9;
+    color: #FFFFFF;
+    border-radius: 3px;
+    transition:ease-in-out 0.3s;
 }
 
 /*SOBRE*/
@@ -407,10 +427,12 @@ p.trabalho {
         position: absolute;
         color: #FFFFFFFF;
         border: solid 1px #FFFFFF;
-        width: 55vw;
+        width: 65vw;
         left: 50%;
-        transform: translateX(-65%);
-        top: 55vh;
+        transform: translateX(-50%);
+        top: 71vh;
+        font-size: .8em;
+        text-align: center;
     }
 
     .download:hover {
