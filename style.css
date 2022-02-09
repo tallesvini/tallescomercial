@@ -20,6 +20,8 @@ body {
     width: 100%;
     z-index: 10;
     top: 0;
+    box-shadow: 1px 1px 4px rgb(163, 163, 163);
+    opacity: 0.96;
 }
 
 .logo-tm .logo1 {
@@ -81,284 +83,148 @@ body {
 .barra-one {
     position: relative;
     height: 100vh;
-    width: 60%;
-    animation: barra-one infinite alternate 5s;
+    width: 100%;
 }
 
-/*animação*/
-@keyframes barra-one {
-    100% { background-color: #189CEF;}
-    50% { background-color: #05AFF2;}
-    0% { background-color: #0064A3;}
+.barra-one .background1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 10vh;
+
 }
 
-@keyframes left-center {
-    from {
-        right: 50vw;
-        opacity: 0.05;
-    }
-    to {
-        right: 0vw;
-        opacity: 1;
-    }
+.barra-one .background2 {
+    display: none;
 }
 
 p.frase {
     color: #ffffff;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.7em;
     padding-top: 14vh;
-    animation: left-center 1.5s;
 }
 
 p.nome {
     color: #ffffff;
     font-size: 7em;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: bolder;
-    animation: left-center 1.5s;
+    text-shadow: 0.1em 0.1em 0.2em #000000;
 }
 
 p.trabalho {
     color: #ffffff;
     font-size: 18px;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.2em;
-    animation: left-center 1.5s;
-}
-
-/*barra one 2*/
-.barra-one2 {
-    position: absolute;
-    width: 40%;
-    height: 100vh;
-    left: 60%;
-    top: 0;
-    animation: barra-two infinite alternate 5s;  
-}
-
-/*HABILIDADES*/
-@keyframes barra-two {
-    100% { background-color: #FFFFFF;}
-    50% { background-color: #e7e7e7;}
-    0% { background-color: #E3E3E3;}
-}
-
-.skills {
-    position: relative;
-    transform: translateY(40%);
-    left: 15%;
-    width: 70%;
-    height: 60vh;
-}
-
-.skills .foto-perfil {
-    position: absolute;
-    width: 50%;
-    border-radius: 50%;
-    top: 15vh;
-    left: 50%;
-    transform: translate(-50%, -50%) 
-}
-
-.habilidades h5 {
-    position: relative;
-    top: 32vh;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    text-decoration: underline #0476D9 3px;
-}
-
-.habilidades p {
-    position: relative;
-    top: 34vh;
-    left: 50%;
-    transform: translate(-50%);
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding-bottom: 1vh;
-    border-radius: 15px 50px;
-    margin: 1vh;
-    width: 16vw;
-    padding-top: 1vh;
-    background-color: #0476D9;
-    border: solid 1px #ffffff;
-    cursor: pointer;
-}
-
-.habilidades p:hover {
-    color: #0476D9;
-    background-color: #e7e7e7;
-    border: solid 1px #0476D9;
-    transition: .3s;
-}
-
-.download {
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    color: #0476D9;
-    border: solid #0476D9 1px;
-    background-color: none;
-    position: absolute;
-    text-align: center;
-    width: 20vw;
-    padding: 1vh;
-    font-size: .8em;
-    top: 58vh;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.download:hover {
-    background-color: #0476D9;
-    color: #FFFFFF;
-    border-radius: 3px;
-    transition:ease-in-out 0.3s;
 }
 
 /*SOBRE*/
 .barra-two {
-    background-image: linear-gradient(to bottom right,#dddddd , #f5f5f5);
+    background-color: #f5f5f5;
     height: 100vh;
     width: 100%;
 }
 
 .paragrafo {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
     position: relative;
-    top: 18vh;
+    font-family: 'Nunito', sans-serif;
+    width: 45vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .paragrafo h1 {
+    position: absolute;
     color: #0476D9;
-    font-size: calc(2em + 1vh);
-    padding-bottom: 15px;
-    padding-top: 10%;
+    font-size: 2em;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .paragrafo p {
     font-size: 1em;
     color: #3E3E40;
-    margin: 0px 10%;
+    top: 20vh;
+    text-align: center;
+}
+
+/*responsividade - sobre*/
+@media (max-width: 1440px) {
+    .wave {
+        position: relative;
+        top: 80px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .wave {
+        top: 140px;
+    }
+}
+
+@media (max-width: 770px) {
+    .wave {
+        top: 180px;
+    }
 }
 
 /*PROJETO*/
 .barra-three {
     position: relative;
-    animation-name: barra-one;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     height: 100vh;
     width: 100%;
+    background-color: #E2EFFF;
+}
+
+.barra-three img {
+    position: absolute;
+    width: 50%;
+    top: 0vh;
+    left: 40%;
+    transform: translate(-50%);
+}
+
+.paragrafo2 {
+    position: relative;
+    width: 35vw;
+    height: 35vh;
+    left: 55vw;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .barra-three h1 {
-    color: #ffffff;
+    position: absolute;
+    color: #0476D9;
     font-family: 'Nunito', sans-serif;
-    font-size: calc(3em - 2vh);
-    text-align: center;
-    padding-top: 18vh;
-}
-
-.projeto-1 img {
-    position: absolute;
-    width: 25em;
-    top: 33vh;
-    left: 5vw;
-    border-radius: 12px;
-    box-shadow: 1px 2px 8px #373b8d;
-}
-
-.projeto-2 img {
-    position: absolute;
-    width: 25em;
-    top: 33vh;
-    border-radius: 12px;
+    font-size: 1.6em;
     left: 50%;
     transform: translate(-50%);
-    box-shadow: 1px 2px 8px #373b8d;
-}
-
-.projeto-3 img {
-    position: absolute;
-    width: 25em;
-    top: 33vh;
-    border-radius: 12px;
-    right: 5vw;
-    box-shadow: 1px 2px 8px #373b8d;
-}
-
-.projeto-1 img:hover, .projeto-2 img:hover, .projeto-3 img:hover {
-    top: 32.5vh;
-    filter: brightness(90%);
-    transition: .3s;
-}
-
-/*responsividade 1*/
-@media (max-width: 1350px) {
-    .projeto-1 img, .projeto-2 img, .projeto-3 img {
-        width: 20em;
-    }
-}
-
-/*responsividade 2*/
-@media (max-width: 1100px) {
-    /*PROJETOS*/
-    .projeto-1 img{
-        width: 15em;
-        top: 30vh;
-        left: 9vw;
-    }
-
-    .projeto-2 img{
-        width: 15em;
-        top: 50vh;
-    }
-
-    .projeto-3 img{
-        width: 15em;
-        top: 30vh;
-        right: 9vw;
-    }
-
-    .projeto-1 img:hover, .projeto-3 img:hover {
-        top: 29.5vh;
-    }
-
-    .projeto-2 img:hover {
-        top: 49.5vh;
-    }
-
-    /*VER MAIS*/
-    .barra-three p {
-        top: 45vh !important;
-    }
-
-    .ver-mais {
-        top: 72vh !important;
-    }
+    top: 2vh;
 }
 
 .barra-three p {
+    position: absolute;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 1em;
-    color: #ffffff;
+    color: #3E3E40;
     position: relative;
-    top: 40vh;
     margin: 0px 10%;
-    text-align: center;
+    top: 10vh;
 }
 
 .ver-mais {
     position: absolute;
-    top: 70vh;
     width: 100%;
     height: 30vh;
     display: flex;
@@ -367,10 +233,12 @@ p.trabalho {
 }
 
 .ver-mais2 {
+    position: absolute;
     width: 80px;
     height: 40px;
     border-radius: 5px;
-    border: none;
+    border: 1px #0476D9 solid;
+    color: #0476D9;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
     background-color: #FFFFFF;
@@ -383,10 +251,46 @@ p.trabalho {
     transition: ease-in-out 0.3s;
 }
 
+.waves2 {
+    position: relative;
+    top: 18vh;
+}
+
+/*responsividade - projetos*/
+@media (max-width: 1650px) {
+    .waves2 {
+        top: 200px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .barra-three img {
+        top: 10vh;
+    }
+
+    .waves2 {
+        top: 280px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .barra-three img {
+        top: 20vh;
+    }
+
+    .paragrafo2 h1 {
+        font-size: 1.1em;
+    }
+
+    .waves2 {
+        top: 350px;
+    }
+}
+
 /*CONTATO*/
 .barra-four {
     position: relative;
-    background-image: linear-gradient(to bottom right,#dddddd , #f5f5f5);
+    background-color: #CBE3FB;
     font-family: 'Nunito', sans-serif;
     color: #3E3E40;
     height: 40vh;
@@ -473,38 +377,29 @@ p.trabalho {
 
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width: 675px) {
-    /*navegação*/
+    /*NAV*/
     .logo-tm .logo1 {
         display: none;
     }
 
-    /*home*/
+    /*HOME*/
     .frase, .nome, .trabalho {
         top: 10vh;
     }
-    
-    .barra-one {
-        width: 100%;
-    }
-    
-    .barra-one .frase {
-        font-size: 1.3em;
+ 
+    .background1 {
+        display: none;
     }
     
     .barra-one .nome {
         font-size: 6em;
     }
-    
-    .barra-one2 {
-        width: 0;
-    }
-    
-    .habilidades {
-        display: none;
-    }
 
-    .barra-one2 img {
-        display: none;
+    .barra-one .background2 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
     }
 
     /*download*/
@@ -525,53 +420,52 @@ p.trabalho {
         transition:ease-in-out 0.4s;
     }
 
-    /*projetos*/
-    .barra-three h1 {
-        padding-top: 15vh;
-    }
-    .projeto-1 img, .projeto-2 img, .projeto-3 img {
-        width: 10em;
-    }
-
-    .projeto-1 img {
-        left: 50%;
-        transform: translate(-50%);
-        top: 25vh;
+    /*SOBRE*/
+    .paragrafo {
+        width: 80vw;
+        left: 50vw;
+        top: 50%;
+        transform: translate(-0 -50%);
     }
 
-    .projeto-1 img:hover {
-        top: 24.5vh;
+    .paragrafo h1 {
+        font-size: 2em;
     }
 
-    .projeto-2 img {
-        left: 50%;
-        transform: translate(-50%);
-        top: 40vh;
+    .wave {
+        position: relative;
+        top: 30vh;
     }
 
-    .projeto-2 img:hover {
-        top: 39.5vh;
+    /*PROJETOS*/
+    .barra-three img {
+        left: 51%;
+        top: 10vh;
+        width: 25em;
     }
     
-    .projeto-3 img {
-        left: 50%;
-        transform: translate(-50%);
-        top: 55vh;
+    .paragrafo2 {
+        position: relative;
+        top: 70%;
+        left: 10%;
+        transform: translate(-50% -50%);
+        width: 80vw;
+        height: 40vh;
     }
 
-    .projeto-3 img:hover {
-        top: 54.5vh;
+    .paragrafo2 h1 {
+        font-size: 1.4em;
     }
     
-    .barra-three p {
-        top: 47vh !important;
-    }
-
     .ver-mais {
-        top: 75vh !important;
+        top: 15vh;
     }
 
-    /*contato*/
+    .waves2 {
+        top: 50vh;
+    }
+
+    /*CONTATO*/
     .icones-contato img {
         width: 1.2em;
         top: 20vh;
@@ -584,6 +478,11 @@ p.trabalho {
 
     /*email fixed*/
     .redes-sociais img {
-        top: 90vh;
+        top: 85vh;
+        left: 80vw;
+    }
+
+    .final {
+        font-size: .5em;
     }
 }

@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Open+Sans+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="anexos/imagens/2.png">
-    
+   
     <title>TM Code | Comercial</title>
 </head>
 <body>
-
+    <!--BARRA SUPERIOR-->
 <header>
     <div>
         <div class="barra-superior">
@@ -33,77 +34,71 @@
     </div>
 </header>
 <main>
+    <!--PAGE HOME-->
     <section id="home">
         <div>
             <div class="barra-one">
+                <img class="background1" src="anexos/imagens/background1.jpg">
+                <img class="background2" src="anexos/imagens/background2.png">
                 <p class="frase">Olá, eu sou</p>
                 <p class="nome">Talles</p>
                 <p class="nome">Vinicius</p>
                 <p class="trabalho">< Desenvolvedor / Front-end /></p>
             </div>
         </div>
-        <div class="barra-one2">
-            <div class="skills">
-                    <img class="foto-perfil" src="anexos/imagens/perfil.jpg" alt="foto-de-perfil">
-                    <a class="download" href="anexos/download/curriculo.pdf" download="Currículo-Talles">FAÇA DOWNLOAD DO MEU CURRÍCULO</a>
-                <div class="habilidades">
-                    <h5>Skills</h5>
-                    <p>html</p>
-                    <p>css</p>
-                    <p>javascript</p>
-                </div>
-            </div>
-        </div>
     </section>
 
+    <!--PAGE SOBRE-->
     <section id="sobre">
         <div class="barra-two">
-            <div class="paragrafo">
-                <h1>Sobre mim</h1>
-                <p>   Olá, eu sou o Talles, prazer! <br>
-                    Sou extremamente fascinado por tecnologia. Desde a conclusão do ensino médio vi <br>
-                    que uma graduação na área seria essencial. <br>
-                    Hoje faço Ciência da Computação e sou completamente apaixonado por esse curso!
-                </p><br>
-                <p>
-                    Estou focando no desenvolvimento de software / web front-end <br> 
-                    com expansão futura p/ outras skills back-end. Já desenvolvi diversos projetos pessoais <br> 
-                    com diversas tecnologias!
-                </p>
-            </div>
-        </div>
-    </section>
+                <div class="paragrafo">
+                    <h1>Sobre mim</h1>
+                    <p>   Olá, eu sou o Talles, prazer!
+                        Sou extremamente fascinado por tecnologia. Desde a conclusão do ensino médio vi
+                        que uma graduação na área seria essencial.
+                        Hoje faço Ciência da Computação e sou completamente apaixonado por esse curso!
+                    </p> <br>
+                    <p>
+                        Estou focando no desenvolvimento de software / web front-end 
+                        com expansão futura p/ outras skills back-end. Já desenvolvi diversos projetos pessoais
+                        com diversas tecnologias!
+                    </p>
+                </div>
 
+                <!--WAVES 1-->
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#E2EFFF" fill-opacity="1" d="M0,96L80,133.3C160,171,320,245,480,245.3C640,245,800,171,960,149.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                </svg>
+            </div>
+        </section>
+
+    <!--PAGE PROJETOS-->
     <section id="projetos">
         <div class="barra-three">
-            <h1>Alguns projetos</h1>
-            <div class="projeto">
-                <div class="projeto-1">
-                    <img src="anexos/projetos/1.png">
-                </div>
-                <div class="projeto-2">
-                    <img src="anexos/projetos/3.png" alt="">
-                </div>
-                <div class="projeto-3">
-                    <img src="anexos/projetos/2.png" alt="">
-                </div>
+            <img src="anexos/imagens/illustrator.png">
+            <div class="paragrafo2">
+                <h1>Alguns projetos</h1>
+                <p class="texto-projeto">
+                    Clique no botão abaixo 
+                    ou no ícone do GitHub
+                    para ser redirecionado ao meu portfólio / diretório
+                    e veja meu projetos já desenvolvidos e em fases de atualizações.
+                </p>
+                <form class="ver-mais" action="https://github.com/tallesvini" target="_blank">
+                    <input class="ver-mais2" type="submit" value="Ver Mais">
+                </form>
             </div>
-            <p class="texto-projeto">
-                Clique no botão abaixo <br>
-                ou no ícone do GitHub
-                para ser redirecionado ao meu portfólio / diretório <br>
-                e veja meu projetos já desenvolvidos e em fases de atualizações.
-            </p>
-            <form class="ver-mais" action="https://github.com/tallesvini" target="_blank">
-                <input class="ver-mais2" type="submit" value="Ver Mais">
-            </form>
+
+            <!--WAVES 2-->
+            <svg class="waves2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0476D9" fill-opacity="0.1" d="M0,128L48,122.7C96,117,192,107,288,101.3C384,96,480,96,576,106.7C672,117,768,139,864,170.7C960,203,1056,245,1152,250.7C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
         </div>
     </section>
-    <div class="redes-sociais">
-        <a href="mailto:tallesvinicius.contato@gmail.com"><img src="anexos/icones/enviar.png"></a>
-    </div>
 </main>
 <footer>
+
+    <!--PAGE CONTATOS-->
     <section id="contato">
         <div class="barra-four">
             <h1>Contato</h1>
@@ -119,6 +114,10 @@
             <p class="final">Copyright 2022 TM Code - Todos os direitos reservados</p>
         </div>
     </section>
+    <!--ICON SEND EMAIL-->
+    <div class="redes-sociais">
+        <a href="mailto:tallesvinicius.contato@gmail.com"><img src="anexos/icones/enviar.png"></a>
+    </div>
 </footer>
 
 <!--
