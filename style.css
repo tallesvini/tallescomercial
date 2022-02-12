@@ -14,21 +14,12 @@ body {
 
 /*BARRA SUPERIOR*/
 .barra-superior {
+    background-color: #131219;
     position: fixed;
-    background-color: #ffffff;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     z-index: 10;
     top: 0;
-    box-shadow: 1px 1px 4px rgb(163, 163, 163);
-    opacity: 0.96;
-}
-
-.logo-tm .logo1 {
-    position: absolute;
-    width: 10em;
-    top: -7vh;
-    left: 18vw;
 }
 
 .links {
@@ -38,27 +29,13 @@ body {
 }
 
 .direcionar {
-    color: #3E3E40;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     position: relative;
     top: 3.5vh;
     margin: 0px 2vw;
     top: 3vh;
-}
-
-/*responsividade logo*/
-@media (max-width: 1050px) {
-    .logo-tm .logo1 {
-        left: 6vw;
-        width: 9em;
-        top: -6vh;
-    }
-}
-
-.direcionar:hover {
-    color: #0476D9;
-    transition: ease 0.5s;
 }
 
 .direcionar::after {
@@ -69,7 +46,7 @@ body {
     height: 1px;
     bottom: -2px;
     left: 0;
-    background-color: #0476D9;
+    background-color: #491BF2;
     transform-origin: bottom right;
     transition: transform 0.35s ease-out;
 }
@@ -90,8 +67,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: 10vh;
-
+    top: 0vh;
 }
 
 .barra-one .background2 {
@@ -137,7 +113,7 @@ p.trabalho {
 }
 
 .download:hover {
-    background-color: #0476D9;
+    background-color: #ffffff11;
     color: #FFFFFF;
     border-radius: 3px;
     transition:ease-in-out 0.3s;
@@ -145,9 +121,18 @@ p.trabalho {
 
 /*SOBRE*/
 .barra-two {
-    background-color: #f5f5f5;
     height: 100vh;
     width: 100%;
+}
+
+.sobre1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.sobre2 {
+    display: none;
 }
 
 .paragrafo {
@@ -163,7 +148,7 @@ p.trabalho {
 
 .paragrafo h1 {
     position: absolute;
-    color: #0476D9;
+    color: #7D68F7;
     font-size: 2em;
     top: 10vh;
     left: 50%;
@@ -172,20 +157,20 @@ p.trabalho {
 
 .paragrafo p {
     font-size: 1em;
-    color: #3E3E40;
+    color: #ffffff;
     top: 20vh;
     text-align: center;
 }
 
 /*responsividade - sobre*/
-@media (max-width: 1440px) {
+@media (max-width: 1520px) {
     .wave {
         position: relative;
-        top: 80px;
+        top: 30px;
     }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1115px) {
     .wave {
         top: 140px;
     }
@@ -202,15 +187,34 @@ p.trabalho {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #E2EFFF;
+    background-color: #171134;
 }
 
-.barra-three img {
+.back1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.back2 {
     position: absolute;
     width: 50%;
     top: 0vh;
     left: 40%;
     transform: translate(-50%);
+}
+
+@media (max-width: 800px) {
+    .back2 {
+        top: 18vh !important; 
+        left: 33%;
+        transform: translate(-50%);
+        width: 30em;
+    }
+}
+
+.back3 {
+    display: none;
 }
 
 .paragrafo2 {
@@ -224,7 +228,7 @@ p.trabalho {
 
 .barra-three h1 {
     position: absolute;
-    color: #0476D9;
+    color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
     font-size: 1.6em;
     left: 50%;
@@ -237,7 +241,7 @@ p.trabalho {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 1em;
-    color: #3E3E40;
+    color: #ffffff;
     position: relative;
     margin: 0px 10%;
     top: 10vh;
@@ -257,15 +261,15 @@ p.trabalho {
     width: 80px;
     height: 40px;
     border-radius: 5px;
-    border: 1px #0476D9 solid;
-    color: #0476D9;
+    border: 1px #240E73 solid;
+    color: #240E73;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
     background-color: #FFFFFF;
 }
 
 .ver-mais2:hover {
-    background-color: #6EB9FA;
+    background-color: #7D68F7;
     color: #FFFFFF;
     border: solid 1px #FFFFFF;
     transition: ease-in-out 0.3s;
@@ -310,21 +314,20 @@ p.trabalho {
 /*CONTATO*/
 .barra-four {
     position: relative;
-    background-color: #CBE3FB;
+    background-image: linear-gradient(180deg, #191041 , #000000);
     font-family: 'Nunito', sans-serif;
-    color: #3E3E40;
     height: 40vh;
     width: 100%;
 }
 
-.barra-four h1, h2, p {
+.barra-four h1, p {
     text-align: center;
     position: relative;
     top: 15%;
 }
 
-.barra-four h1, h2 {
-    color: #0476D9;
+.barra-four h1 {
+    color: #ffffff;
 }
 
 .dados-contato {
@@ -334,26 +337,31 @@ p.trabalho {
     transform: translate(-50%);
 }
 
+.dados-contato p {
+    color: #FFFFFF;
+}
+
 .barra-four a {
     text-decoration: none;
-    color: #262626;
+    color: #FFFFFF;
 }
 
 .barra-four a:hover {
-    color: #0476D9;
+    color: #9074F7;
     transition: ease-in 0.2s;
 }
 
 .icones-contato img{  
     position: relative;
     left: 50%;
-    top: 15vh;
+    top: 20vh;
     transform: translate(-100%);
     width: 35px;
 }
 
 .final {
     font-size: calc(1em - 0.9vh);
+    color: #BFBFBF;
     position: absolute;
     top: 37vh;
     left: 50%;
@@ -370,29 +378,21 @@ p.trabalho {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 3px;
 }
 
 /*ENVIAR EMAIL FIXED*/
 .redes-sociais img {
     position: fixed;
-    width: 4em;
+    width: 3em;
     top: 88vh;
     right: 2%;
-    filter: drop-shadow(0px 1px 2px #0476D9);
 }
 
 .redes-sociais img:hover {
     top: 87.5vh;
     transition: .2s;
-}
-
-@media (max-width: 900px) {
-    .redes-sociais img {
-        width: 3em;
-        right: 1%;
-    }
 }
 
 /*RESPONSIVIDADE MOBILE*/
@@ -435,13 +435,6 @@ p.trabalho {
         text-align: center;
     }
 
-    .download:hover {
-        background-color: white;
-        border: solid #0476D9 1px;
-        color: #0476D9;
-        transition:ease-in-out 0.4s;
-    }
-
     /*SOBRE*/
     .paragrafo {
         width: 80vw;
@@ -449,26 +442,48 @@ p.trabalho {
         top: 50%;
         transform: translate(-0 -50%);
     }
-
-    .paragrafo h1 {
-        font-size: 2em;
-    }
-
     .wave {
         position: relative;
         top: 30vh;
     }
 
+    .sobre1 {
+        display: none;
+    }
+    
+    .sobre2 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .paragrafo h1 {
+        font-size: 2em;
+    }
+
     /*PROJETOS*/
-    .barra-three img {
-        left: 51%;
-        top: 10vh;
-        width: 25em;
+    .barra-three {
+        position: relative;
+    }
+    .back1 {
+        display: none;
+    }
+
+    .back2 {
+        left: 50%;
+        width: 13em;
+    }
+
+    .back3 {
+        display: block;
+        width: 100%;
+        height: 100vh;
     }
     
     .paragrafo2 {
-        position: relative;
-        top: 70%;
+        position: absolute;
+        top: 63vh;
         left: 10%;
         transform: translate(-50% -50%);
         width: 80vw;
@@ -476,7 +491,7 @@ p.trabalho {
     }
 
     .paragrafo2 h1 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     
     .ver-mais {
@@ -484,24 +499,28 @@ p.trabalho {
     }
 
     .waves2 {
-        top: 50vh;
+        position: absolute;
+        top: 89vh;
     }
 
     /*CONTATO*/
+    .barra-four h1 {
+        top: 10vh;
+    }
     .icones-contato img {
-        width: 1.2em;
-        top: 20vh;
+        width: 1.6em;
+        top: 22vh;
     }
 
     .dados-contato p {
-        font-size: .6em;
-        top: 5vh;
+        font-size: .8em;
+        top: 2vh;
     }
 
     /*email fixed*/
     .redes-sociais img {
         top: 85vh;
-        left: 80vw;
+        left: 84vw;
     }
 
     .final {
