@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,8 +15,8 @@ body {
 
 /*BARRA SUPERIOR*/
 .barra-superior {
-    background-color: #131219;
     position: fixed;
+    background-color: #131219;
     height: 9vh;
     width: 100%;
     z-index: 10;
@@ -23,16 +24,16 @@ body {
 }
 
 .links {
-    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 1em;
 }
 
 .direcionar {
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
     top: 3.5vh;
     margin: 0px 2vw;
     top: 3vh;
@@ -78,8 +79,8 @@ p.frase {
     color: #ffffff;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
+    padding-top: 3vh;
     font-size: 1.7em;
-    padding-top: 10vh;
 }
 
 p.nome {
@@ -89,6 +90,7 @@ p.nome {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bolder;
     text-shadow: 0.1em 0.1em 0.2em #000000;
+    margin-top: 3vh;
 }
 
 p.trabalho {
@@ -97,6 +99,7 @@ p.trabalho {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.2em;
+    padding-top: 3vh;
 }
 
 .download {
@@ -106,9 +109,9 @@ p.trabalho {
     color: #ffffff;
     border: solid #ffffff 1px;
     background-color: none;
-    top: 82vh;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 20vh;
     padding: 10px;
 }
 
@@ -397,14 +400,13 @@ p.trabalho {
 
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width: 675px) {
-    /*NAV*/
-    .logo-tm .logo1 {
-        display: none;
-    }
-
     /*HOME*/
     .frase, .nome, .trabalho {
-        top: 10vh;
+        top: 15vh;
+    }
+
+    .nome {
+        font-size: 5.5em !important;
     }
  
     .background1 {
@@ -430,7 +432,7 @@ p.trabalho {
         width: 65vw;
         left: 50%;
         transform: translateX(-50%);
-        top: 71vh;
+        margin-top: 20vh;
         font-size: .8em;
         text-align: center;
     }
@@ -439,9 +441,14 @@ p.trabalho {
     .paragrafo {
         width: 80vw;
         left: 50vw;
-        top: 50%;
+        top: 45%;
         transform: translate(-0 -50%);
     }
+
+    .paragrafo h1{
+        font-size: 1.8em !important;
+    }
+
     .wave {
         position: relative;
         top: 30vh;
@@ -492,10 +499,15 @@ p.trabalho {
 
     .paragrafo2 h1 {
         font-size: 1.3em;
+        margin-top: 7vh;
+    }
+
+    .paragrafo2 p {
+        margin-top: 7vh;
     }
     
     .ver-mais {
-        top: 15vh;
+        margin-top: 2vh;
     }
 
     .waves2 {
@@ -519,7 +531,7 @@ p.trabalho {
 
     /*email fixed*/
     .redes-sociais img {
-        top: 85vh;
+        margin-top: 1vh;
         left: 84vw;
     }
 

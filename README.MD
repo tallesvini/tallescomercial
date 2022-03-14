@@ -1,5 +1,10 @@
-# Meu site portfólio! 😎✔
+# My web portfolio! ✔
 
-📬 <a href='http://tmcode.tech/' target="_blank">Clique aqui</a> e levará até ele!
+📬 <a href='http://tmcode.tech/' target="_blank">Click here</a>to access!
 
-#### ✅ Feito com CSS e HTML.
+#### ✅ Made in HTML5 and CSS3.
+
+### 📩 Contact me via e-mail: tallesvinicius.contato@gmail.com
+
+.
+.
