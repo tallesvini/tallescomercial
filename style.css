@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -9,14 +9,14 @@ html {
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     background-color: #F2F2F2;
-    font-family: 'Roboto', sans-serif;
 }
 
 /*BARRA SUPERIOR*/
 .barra-superior {
     position: fixed;
-    background-color: #131219;
+    background-color: #FFFFFF;
     height: 9vh;
     width: 100%;
     z-index: 10;
@@ -24,7 +24,6 @@ body {
 }
 
 .links {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1em;
 }
@@ -33,7 +32,7 @@ body {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: #ffffff;
+    color: #0D0D0D;
     top: 3.5vh;
     margin: 0px 2vw;
     top: 3vh;
@@ -58,6 +57,10 @@ body {
 }
 
 /*HOME*/
+#home {
+    background-color: #491BF2;
+}
+
 .barra-one {
     position: relative;
     height: 100vh;
@@ -76,38 +79,34 @@ body {
 }
 
 p.frase {
-    color: #ffffff;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
     padding-top: 3vh;
     font-size: 1.7em;
 }
 
 p.nome {
-    color: #ffffff;
-    font-size: 7em;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
     font-weight: bolder;
-    text-shadow: 0.1em 0.1em 0.2em #000000;
+    color: #FFFFFF;
+    font-size: 7em;
+    text-shadow: 0.05em 0.02em 0.1em #1f1f1f;
     margin-top: 3vh;
 }
 
 p.trabalho {
-    color: #ffffff;
-    font-size: 18px;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
     font-size: 1.2em;
     padding-top: 3vh;
 }
 
 .download {
     position: absolute;
-    font-family: 'Nunito', sans-serif;
     text-decoration: none;
-    color: #ffffff;
-    border: solid #ffffff 1px;
+    color: #FFFFFF;
+    border: solid #FFFFFF 1px;
     background-color: none;
     left: 50%;
     transform: translate(-50%);
@@ -116,13 +115,17 @@ p.trabalho {
 }
 
 .download:hover {
-    background-color: #ffffff11;
+    background-color: #7D68F7;
     color: #FFFFFF;
     border-radius: 3px;
-    transition:ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 /*SOBRE*/
+#sobre {
+    background-color: #F2F2F2;
+}
+
 .barra-two {
     height: 100vh;
     width: 100%;
@@ -134,24 +137,19 @@ p.trabalho {
     height: 100vh;
 }
 
-.sobre2 {
-    display: none;
-}
-
 .paragrafo {
     position: relative;
-    font-family: 'Nunito', sans-serif;
+    text-align: center;
     width: 45vw;
     height: 60vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .paragrafo h1 {
     position: absolute;
-    color: #7D68F7;
+    color: #491BF2;
     font-size: 2em;
     top: 10vh;
     left: 50%;
@@ -159,65 +157,35 @@ p.trabalho {
 }
 
 .paragrafo p {
-    font-size: 1em;
-    color: #ffffff;
-    top: 20vh;
     text-align: center;
-}
-
-/*responsividade - sobre*/
-@media (max-width: 1520px) {
-    .wave {
-        position: relative;
-        top: 30px;
-    }
-}
-
-@media (max-width: 1115px) {
-    .wave {
-        top: 140px;
-    }
-}
-
-@media (max-width: 770px) {
-    .wave {
-        top: 180px;
-    }
+    color: #0D0D0D;
+    font-size: 1em;
+    top: 20vh;
 }
 
 /*PROJETO*/
 .barra-three {
     position: relative;
+    background-color: #491BF2;
     height: 100vh;
     width: 100%;
-    background-color: #171134;
 }
 
 .back1 {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-}
-
-.back2 {
-    position: absolute;
     width: 50%;
-    top: 0vh;
     left: 40%;
     transform: translate(-50%);
+    top: 0vh;
 }
 
 @media (max-width: 800px) {
-    .back2 {
-        top: 18vh !important; 
+    .back1 {
+        top: 18vh !important;
         left: 33%;
         transform: translate(-50%);
-        width: 30em;
+        width: 28em;
     }
-}
-
-.back3 {
-    display: none;
 }
 
 .paragrafo2 {
@@ -232,7 +200,6 @@ p.trabalho {
 .barra-three h1 {
     position: absolute;
     color: #FFFFFF;
-    font-family: 'Nunito', sans-serif;
     font-size: 1.6em;
     left: 50%;
     transform: translate(-50%);
@@ -240,35 +207,31 @@ p.trabalho {
 }
 
 .barra-three p {
-    position: absolute;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    font-size: 1em;
-    color: #ffffff;
     position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
     margin: 0px 10%;
     top: 10vh;
 }
 
 .ver-mais {
-    position: absolute;
-    width: 100%;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 30vh;
 }
 
 .ver-mais2 {
     position: absolute;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px #240E73 solid;
+    color: #240E73;
     width: 80px;
     height: 40px;
     border-radius: 5px;
-    border: 1px #240E73 solid;
-    color: #240E73;
-    font-family: 'Nunito', sans-serif;
-    cursor: pointer;
-    background-color: #FFFFFF;
 }
 
 .ver-mais2:hover {
@@ -278,25 +241,10 @@ p.trabalho {
     transition: ease-in-out 0.3s;
 }
 
-.waves2 {
-    position: relative;
-    top: 18vh;
-}
-
 /*responsividade - projetos*/
-@media (max-width: 1650px) {
-    .waves2 {
-        top: 200px;
-    }
-}
-
 @media (max-width: 1370px) {
     .barra-three img {
         top: 10vh;
-    }
-
-    .waves2 {
-        top: 280px;
     }
 }
 
@@ -308,29 +256,136 @@ p.trabalho {
     .paragrafo2 h1 {
         font-size: 1.1em;
     }
+}
 
-    .waves2 {
-        top: 350px;
+
+/*timeline*/
+.timeline {
+    width: 100%;
+    background-color: #491BF2;
+    color: #fff;
+    padding: 30px 0px;
+    box-shadow: 0px 0px 10px #00000080;
+}
+    
+.timeline ul {
+    width: 70vw;
+    margin: 0 auto;
+    list-style-type: none;
+    border-left: 2px solid #FFF;
+    padding: 10px 5px;
+}
+    
+.timeline h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    margin: 5vh 0;
+}
+    
+.content button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+    
+.content button {
+    
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px #240E73 solid;
+    color: #240E73;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+    
+.content button:hover {
+    background-color: #491BF2;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    transition: ease-in-out 0.3s;
+}
+    
+.timeline ul li {
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+    
+    
+.timeline ul li span {
+    display: inline-block;
+    background-color: #7D68F7;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+}
+    
+.timeline ul li .content h3 {
+    color: #fff;
+    font-size: 17px;
+    padding-top: 5px;
+}
+    
+.timeline ul li .content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 15px;
+}
+    
+.timeline ul li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FFFF;
+    border-radius: 50%;
+    left: -11.5px;
+    top: 28px;
+    transition: .5s;
+}
+    
+.timeline ul li:hover {
+    background-color: #7D68F7;
+    color: #fff;
+    border-radius: 10px;
+}
+    
+.timeline ul li:hover:before {
+    box-shadow: 0px 0px 10px 2px #fff;
+}
+    
+@media (max-width:300px) {
+    .timeline {
+        width: 100%;
+        padding: 30px 5px 30px 10px;
     }
+    
+    .timeline ul li .content h3 {
+        color: #34ace0;
+        font-size: 15px;
+    }  
 }
 
 /*CONTATO*/
 .barra-four {
     position: relative;
-    background-image: linear-gradient(180deg, #191041 , #000000);
-    font-family: 'Nunito', sans-serif;
+    background-color: #F2F2F2;
     height: 40vh;
     width: 100%;
 }
 
-.barra-four h1, p {
+.barra-four h1,
+p {
     text-align: center;
     position: relative;
     top: 15%;
 }
 
 .barra-four h1 {
-    color: #ffffff;
+    color: #491BF2;
 }
 
 .dados-contato {
@@ -341,20 +396,20 @@ p.trabalho {
 }
 
 .dados-contato p {
-    color: #FFFFFF;
+    color: #0D0D0D;
 }
 
 .barra-four a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #0D0D0D;
 }
 
 .barra-four a:hover {
-    color: #9074F7;
+    color: #491BF2;
     transition: ease-in 0.2s;
 }
 
-.icones-contato img{  
+.icones-contato img {
     position: relative;
     left: 50%;
     top: 20vh;
@@ -364,7 +419,7 @@ p.trabalho {
 
 .final {
     font-size: calc(1em - 0.9vh);
-    color: #BFBFBF;
+    color: #0D0D0D;
     position: absolute;
     top: 37vh;
     left: 50%;
@@ -401,63 +456,42 @@ p.trabalho {
 /*RESPONSIVIDADE MOBILE*/
 @media (max-width: 675px) {
     /*HOME*/
-    .frase, .nome, .trabalho {
-        top: 15vh;
+    .frase,
+    .nome,
+    .trabalho {
+        top: 20vh;
     }
 
     .nome {
         font-size: 5.5em !important;
     }
- 
-    .background1 {
-        display: none;
-    }
-    
-    .barra-one .nome {
-        font-size: 6em;
-    }
-
-    .barra-one .background2 {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100vh;
-    }
 
     /*download*/
     .download {
         position: absolute;
+        text-align: center;
         color: #FFFFFFFF;
         border: solid 1px #FFFFFF;
         width: 65vw;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 20vh;
+        margin-top: 25vh;
         font-size: .8em;
-        text-align: center;
     }
 
     /*SOBRE*/
     .paragrafo {
         width: 80vw;
-        left: 50vw;
-        top: 45%;
-        transform: translate(-0 -50%);
     }
 
-    .paragrafo h1{
+    .paragrafo h1 {
         font-size: 1.8em !important;
-    }
-
-    .wave {
-        position: relative;
-        top: 30vh;
     }
 
     .sobre1 {
         display: none;
     }
-    
+
     .sobre2 {
         position: absolute;
         display: block;
@@ -473,21 +507,12 @@ p.trabalho {
     .barra-three {
         position: relative;
     }
+
     .back1 {
-        display: none;
-    }
-
-    .back2 {
         left: 50%;
-        width: 13em;
+        width: 18em;
     }
 
-    .back3 {
-        display: block;
-        width: 100%;
-        height: 100vh;
-    }
-    
     .paragrafo2 {
         position: absolute;
         top: 63vh;
@@ -505,20 +530,16 @@ p.trabalho {
     .paragrafo2 p {
         margin-top: 7vh;
     }
-    
+
     .ver-mais {
         margin-top: 2vh;
-    }
-
-    .waves2 {
-        position: absolute;
-        top: 89vh;
     }
 
     /*CONTATO*/
     .barra-four h1 {
         top: 10vh;
     }
+
     .icones-contato img {
         width: 1.6em;
         top: 22vh;
